@@ -12,11 +12,13 @@ def load_todos():
         pass
 
 def print_menu():
-    print("\n1. Show next todo")
-    print("2. Edit todo")
-    print("3. Delete todo")
-    print("4. Add new todo")
-    print("5. Show all todos")
+    print("\nMenu Options:")
+    print("-------------")
+    print("1. Show all todos")
+    print("2. Show next todo")
+    print("3. Add new todo")
+    print("4. Edit todo")
+    print("5. Delete todo")
     print("6. Exit")
 
 def clear_screen():
