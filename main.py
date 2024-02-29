@@ -8,15 +8,15 @@ def main():
         print_menu()
         choice = input('Choose an option: ')
         if choice == '1':
-            show_next_todo()
-        elif choice == '2':
-            edit_todo()
-        elif choice == '3':
-            delete_todo()
-        elif choice == '4':
-            add_todo()
-        elif choice == '5':
             show_all_todos()
+        elif choice == '2':
+            show_next_todo()
+        elif choice == '3':
+            add_todo()
+        elif choice == '4':
+            edit_todo()
+        elif choice == '5':
+            delete_todo()
         elif choice == '6':
             break
         else:
