@@ -20,7 +20,7 @@ def edit_todo():
 def delete_todo():
     for i, todo in enumerate(todos, start=1):
         print(f'{i}. {todo}')
-    todo_number = int(input('Which todo do you want to delete? '))
+    todo_number = int(input('Which todo do you want to delete: '))
     if 0 < todo_number <= len(todos):
         deleted_todo = todos.pop(todo_number - 1)
         print(f'Deleted todo: {deleted_todo}')
