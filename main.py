@@ -1,26 +1,27 @@
-def print_menu():
-    print("\n1. Option 1")
-    print("2. Option 2")
-    print("3. Option 3")
-    print("4. Option 4")
-    print("5. Exit")
+from utils import load_todos, print_menu, clear_screen
+from actions import show_next_todo, edit_todo, delete_todo, add_todo, show_all_todos
 
 def main():
+    load_todos()
     while True:
+        clear_screen()
         print_menu()
         choice = input('Choose an option: ')
         if choice == '1':
-            pass  # Replace with code for option 1
+            show_next_todo()
         elif choice == '2':
-            pass  # Replace with code for option 2
+            edit_todo()
         elif choice == '3':
-            pass  # Replace with code for option 3
+            delete_todo()
         elif choice == '4':
-            pass  # Replace with code for option 4
+            add_todo()
         elif choice == '5':
+            show_all_todos()
+        elif choice == '6':
             break
         else:
             print('Invalid choice')
+        input('Press enter to continue...')
 
 if __name__ == '__main__':
     main()
