@@ -2,6 +2,7 @@ from utils import *
 from actions import *
 
 def main():
+    startup_page()
     load_todos()
     while True:
         clear_screen()
@@ -20,6 +21,7 @@ def main():
         elif choice == '6':
             help_todo()
         elif choice == '7':
+            clear_screen()
             break
         else:
             print('Invalid choice')
