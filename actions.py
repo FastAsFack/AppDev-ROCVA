@@ -38,7 +38,7 @@ def add_todo():
     todos.append(todo_entry)
     with open('todo_log.txt', 'a') as f:
         f.write(f'{datetime.datetime.now()}: {todo_entry}\n')
-        
+
 def show_all_todos():
     if todos:
         for i, todo in enumerate(todos, start=1):
