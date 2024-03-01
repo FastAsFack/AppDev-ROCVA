@@ -1,5 +1,5 @@
-from utils import load_todos, print_menu, clear_screen
-from actions import show_next_todo, edit_todo, delete_todo, add_todo, show_all_todos
+from utils import *
+from actions import *
 
 def main():
     load_todos()
@@ -18,6 +18,8 @@ def main():
         elif choice == '5':
             delete_todo()
         elif choice == '6':
+            help_todo()
+        elif choice == '7':
             break
         else:
             print('Invalid choice')
