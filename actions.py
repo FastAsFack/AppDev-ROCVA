@@ -32,10 +32,13 @@ def delete_todo():
 
 def add_todo():
     new_todo = input('Enter a new todo: ')
-    todos.append(new_todo)
+    due_date = input('Enter the due date (YYYY-MM-DD): ')
+    priority = input('Enter the priority level (1-5): ')
+    todo_entry = f'{new_todo}, Due Date: {due_date}, Priority: {priority}'
+    todos.append(todo_entry)
     with open('todo_log.txt', 'a') as f:
-        f.write(f'{datetime.datetime.now()}: {new_todo}\n')
-
+        f.write(f'{datetime.datetime.now()}: {todo_entry}\n')
+        
 def show_all_todos():
     if todos:
         for i, todo in enumerate(todos, start=1):
