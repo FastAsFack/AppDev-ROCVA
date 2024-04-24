@@ -12,7 +12,10 @@ def edit_todo():
         print(f'{i}. {todo}')
     todo_number = int(input('Which todo do you want to edit? '))
     if 0 < todo_number <= len(todos):
-        new_todo = input('Enter the new todo: ')
+        new_task = input('Enter the new task: ')
+        new_due_date = input('Enter the new due date (YYYY-MM-DD): ')
+        new_priority = input('Enter the new priority level (1-5): ')
+        new_todo = f'{new_task}, Due Date: {new_due_date}, Priority: {new_priority}'
         todos[todo_number - 1] = new_todo
     else:
         print('Invalid todo number')
